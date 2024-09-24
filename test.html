@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Tooltip</title>
+  <style>
+    /* Tooltip container */
+    .tooltip-container {
+        margin-top: 50%;
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 8px;
+    }
+
+    /* Tooltip text */
+    .tooltip-text {
+      visibility: hidden;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      padding: 8px;
+      position: absolute;
+      bottom: 125%; /* Position the tooltip above the container */
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      white-space: nowrap;
+    }
+
+    /* Tooltip arrow */
+    .tooltip-text::after {
+      content: '';
+      position: absolute;
+      top: 100%; /* Arrow pointing down */
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 5px;
+      border-style: solid;
+      border-color: #333 transparent transparent transparent;
+    }
+
+    /* Show the tooltip when hovering */
+    .tooltip-container:hover .tooltip-text {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tooltip-container">
+    Hover over me
+    <span class="tooltip-text">This is a custom tooltip</span>
+  </div>
+
+</body>
+</html>

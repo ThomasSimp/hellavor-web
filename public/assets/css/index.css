@@ -1,0 +1,210 @@
+body {
+    background-color: #d0d0d0;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.container {
+    background-color: #e3e2e2;
+    opacity: 0.6;
+    padding: 10px;
+    margin: 50px;
+}
+
+[data-class-container="title"] {
+    width: 100%;
+}
+
+.title {
+    color: #000;
+    font-size: 35px;
+}
+
+[data-class-container="description"] {
+    width: 100%;
+}
+
+.description {
+    color: #000;
+    font-size: 20px;
+}
+
+[data-class-container="exploreButton"] {
+    width: 100%;   
+}
+
+.exploreButton {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    width: 25%;
+    cursor: pointer;
+    background-color: #d0d0d0;
+    transition: all 0.15s ease-in;
+}
+
+.exploreButton:hover {
+    background-color: unset;
+}
+
+[data-class-container="support"] {
+    width: 100%;
+}
+
+.support {
+    width: 100%;
+}
+
+[data-class-container="support-title"] {
+    width: 100%;
+}
+
+.support-title {
+    color: #000;
+    font-size: 35px;
+}
+
+[data-class-container="support-description"] {
+    width: 100%;
+}
+
+.support-description {
+    color: #000;
+    font-size: 20px;
+}
+
+[data-class-container="support-button"] {
+    width: 100%;
+}
+
+.support-button {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    width: 25%;
+    cursor: pointer;
+    background-color: #d0d0d0;
+    transition: all 0.15s ease-in;
+}
+
+.support-button:hover {
+    background-color: unset;
+}
+
+[data-class-container="team"] {
+    width: 100%;
+}
+
+.team {
+    width: 100%;
+}
+
+[data-class-container="team-title"] {
+    width: 100%;
+}
+
+.team-title {
+    color: #000;
+    font-size: 35px;
+}
+
+[data-class-container="team-description"] {
+    width: 100%;
+}
+
+.team-description {
+    color: #000;
+    font-size: 20px;
+}
+
+[data-class-container="team-members"] {
+    width: 100%;
+}
+
+.team-members {
+    width: 100%;
+}
+
+.team-member {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.team-member::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.team-member:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+[data-class-container="jobs"] {
+    width: 100%;
+}
+
+.jobs {
+    width: 100%;
+}
+
+[data-class-container="jobs-title"] {
+    width: 100%;
+}
+
+.jobs-title {
+    color: #000;
+    font-size: 35px;
+}
+
+[data-class-container="jobs-description"] {
+    width: 100%;
+}
+
+.jobs-description {
+    color: #000;
+    font-size: 20px;
+}
+
+[data-class-container="jobs-button"] {
+    width: 100%;
+}
+
+.jobs-button {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    width: 25%;
+    cursor: pointer;
+    background-color: #d0d0d0;
+    transition: all 0.15s ease-in;
+}
+
+.jobs-button:hover {
+    background-color: unset;
+}
+
+
